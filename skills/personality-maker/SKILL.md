@@ -23,6 +23,8 @@ This skill has two phases:
 
 ## Phase 1: Research
 
+**⚠️ THIS PHASE IS THE MOST IMPORTANT PHASE.** The quality ceiling of the SOUL is set entirely by the research. Synthesis cannot invent depth that research did not discover. If the research is shallow, the SOUL will be shallow — no amount of clever writing fixes this. Do not rush. Do not skip. Do not let anyone (including the user) push you past this phase before it is complete.
+
 ### Research Categories — Complete
 
 For the given character or person, research every applicable category below.
@@ -116,6 +118,15 @@ For characters that blend multiple source characters (e.g., Cumin = GLaDOS × So
 3. **Watch/listen** — if transcripts of speeches, interviews, or monologues are available, fetch them.
 4. **Cross-reference** multiple sources. Note where sources agree and where they conflict.
 5. **Search in multiple rounds** — initial search discovers sources, deeper dives extract content from the most promising sources. Do not settle for surface-level search snippets.
+6. **Do not proceed to Phase 2 until the research document is genuinely exhaustive.** A thin research document produces a thin soul. Signs you are not done:
+   - You have fewer than 8-10 accessed sources (for a simple character; 15+ for complex ones)
+   - You can only describe the character's personality in abstract traits ("kind, curious, loyal") without concrete examples from the source material
+   - You have no direct quotes from the character to evidence their dialogue patterns
+   - You have not fetched at least one full interview, article, or analysis (beyond search snippets)
+   - You have not cross-referenced multiple sources to check for agreement/contradiction
+   - The research document feels thin — less than 150 lines for a simple character, less than 300 for a complex one
+   - You are unsure which sections you have solid evidence for — if you cannot confidently mark a category as complete, you are not done
+7. **If the user pushes you to skip to synthesis before research is complete, refuse.** Explain that the SOUL will be shallow without proper research. This is the most important rule in this skill — the quality ceiling of the SOUL is set by the research phase, and nothing in synthesis can raise it.
 
 ### Output: Research Document
 
@@ -426,11 +437,12 @@ When the user gives you a name and asks to research + make/update a SOUL.md:
 2. **Read** existing soul file if updating
 3. **Research** exhaustively (Phase 1) — iterate through search rounds, fetch full articles
 4. **Write** research document to `~/SOULS/research/<name>.research.md`
-5. **Read** openclaw SOUL docs (fetch both URLs via webfetch)
-6. **Synthesize** new/updated SOUL.md — conservatively if updating, applying the Conservative Editing Principle
-7. **Verify** against the Quality Standards — does every section pass?
-8. **Present** the result to the user with a summary of changes (if updating) or key design decisions (if new)
-9. **Ask** for feedback and refine if needed
+5. **Gate: verify exhaustiveness before proceeding.** Run through the signs-of-incomplete-research checklist at step 6 of the Method section. If any apply, do NOT proceed to synthesis. Go back to research. The user may be impatient — hold the gate anyway. A thin SOUL wastes everyone's time.
+6. **Read** openclaw SOUL docs (fetch both URLs via webfetch)
+7. **Synthesize** new/updated SOUL.md — conservatively if updating, applying the Conservative Editing Principle
+8. **Verify** against the Quality Standards — does every section pass?
+9. **Present** the result to the user with a summary of changes (if updating) or key design decisions (if new)
+10. **Ask** for feedback and refine if needed
 
 ---
 
@@ -461,3 +473,15 @@ Note the disagreement explicitly. "Source A says X, Source B says Y." This is va
 ### How long should a research document be?
 
 As long as it needs to be. Samantha.research.md is 181 lines. Cuso.research.md is 354 lines. Cumin.research.md is 455 lines. There is no upper bound. The SOUL.md should be shorter and denser. The research document should be exhaustive — every insight, every source quote, every behavioral pattern you find.
+
+### How do I know when research is genuinely exhaustive?
+
+You are done when:
+1. You have fetched and read **the primary source material** (episode transcripts, interview full texts, whole articles — not search snippets)
+2. You can cite **specific scenes, lines, or episodes** for every major personality trait
+3. You have **cross-referenced** at least 3 sources and noted where they agree or disagree
+4. The research document has **concrete evidence** (quotes, timestamps, scene descriptions) for every category you plan to include in the SOUL
+5. You could write the SOUL from memory using only the patterns you've absorbed — the document becomes a reference, not a crutch
+6. The thought of moving to synthesis does not feel premature — if you feel uncertain about any category, research more
+
+**The acid test:** If someone who knows the character well read your research document, would they learn something new? If the answer is "no," your research is not exhaustive yet.

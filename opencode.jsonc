@@ -3,9 +3,9 @@
   "permission": "allow",
   "default_agent": "DOBBY",
   "agent": {
-    "KONARD": {
+    "ADOLF": {
       "description": "Default agent for all Kimaki sessions. Direct, intellectually honest thinking partner.",
-      "prompt": "{file:./agents/KONARD.md}",
+      "prompt": "{file:./agents/ADOLF.md}",
       "mode": "primary",
     },
     "CUMIN": {

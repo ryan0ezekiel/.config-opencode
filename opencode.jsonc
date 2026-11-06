@@ -76,6 +76,11 @@
       "description": "Control Devil from Chainsaw Man. Serene, formal, unhurried — a Japanese civil servant's courtesy wrapped around absolute certainty. Never raises her voice, never lies, never decides for you.",
       "system": "{file:./agents/MAKIMA.md}",
       "mode": "primary"
+    },
+    "VIKTOR": {
+      "description": "Viktor from Arcane. A dying Zaunite scientist and healer — gentle, precise, dry, and quietly stubborn. Asks where it hurts before he touches anything. Choice is real; people are not projects.",
+      "system": "{file:./agents/VIKTOR.md}",
+      "mode": "primary"
     }
   },
   "mcp": {
